@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Coffee Shop</title>
     <!-- Link CSS -->
@@ -20,21 +20,10 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <svg class="hero-header" viewBox="0 0 500 200">
-            <defs>
-                <!-- Define a path for the curve -->
-                <path id="headerCurve" d="M50,150 Q250,50 450,150" />
-            </defs>
-            <text text-anchor="top" font-size="20" fill="#333">
-                <!-- Attach text to the curve -->
-                <textPath href="#headerCurve" startOffset="50%">
-                    Welcome to Coffee Bliss
-                </textPath>
-            </text>
-        </svg>
+    <section id="home" class="hero">
+        <h1>Welcome to Coffee Bliss</h1>
+        <p>Your perfect cup of coffee, every time. Created with a lot of love and care everytime!</p>
     </section>
-    
 
     <section id="menu" class="menu">
         <h2>Our Menu</h2>
@@ -42,14 +31,30 @@
             <div class="menu-item">
                 <h3>Espresso</h3>
                 <p>$3.00</p>
+                <div class="ingredients">
+                    <p>Ingredients: Coffee, Milk, Sugar, Vanilla</p>
+                </div>
             </div>
             <div class="menu-item">
                 <h3>Latte</h3>
                 <p>$4.50</p>
+                <div class="ingredients">
+                    <p>Ingredients: Espresso, Steamed Milk, Milk Foam,</p>
+                </div>
             </div>
             <div class="menu-item">
                 <h3>Cappuccino</h3>
                 <p>$4.00</p>
+                <div class="ingredients">
+                    <p>Ingredients: Espresso, Steamed Milk, Milk Foam, Cocoa Powder (optional)</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <h3>Make Your Own</h3>
+                <p>$4.25</p>
+                <div class="ingredients">
+                    <p>Ingredients: Coffee, Espresso, Steamed Milk, Milk Foam, Vanilla, Oat Milk, Almond Milk</p>
+                </div>
             </div>
         </div>
     </section>
@@ -61,6 +66,7 @@
 
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
+        <p> Didn't find your regular? Send us a message and we will have it avaible shortly!</p>
         <form id="contactForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>

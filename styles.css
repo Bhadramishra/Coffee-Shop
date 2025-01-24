@@ -46,30 +46,27 @@ header {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 4rem 2rem;
     background: #e9d8a6;
-    border-radius: 50% 50% 0 0; /* Creates the smooth oval shape */
-    position: relative;
+    border-radius: 50% 50% 0 0;
 }
 
 .hero h1 {
-    font-size: 1rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.hero-curve {
-    width: 100%; /* Makes the curve span the width of the hero */
-    height: 50px;
-    position: absolute;
-    top: 1rem; /* Adjust to position the curve */
-    left: 0;
+.hero p {
+    font-size: 1.2rem;
 }
+
 
 /* Menu Section */
 .menu {
     padding: 2rem;
     text-align: center;
     background: #faedcd;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .menu h2 {
@@ -85,15 +82,34 @@ header {
 }
 
 .menu-item {
-    background: #fff;
+    background: #fff3f3;
     padding: 1rem;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 50%; /* Makes it a circle */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 210px;
+    height: 210px;
+    text-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Needed for absolute positioning of ingredients */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+.ingredients {
+    position: absolute;
+    bottom: 20px; /* Position the ingredients near the bottom */
+    width: 100%;
+    opacity: 0; /* Hide the ingredients initially */
+    transition: opacity 0.3s ease;
+    color: #333;
+    font-size: 12px;
     text-align: center;
 }
 
+.menu-item:hover .ingredients {
+    opacity: 1; /* Show the ingredients on hover */
+}
 .menu-item h3 {
     margin: 0.5rem 0;
 }
@@ -114,6 +130,7 @@ header {
 .contact {
     padding: 2rem;
     background: #fffcf2;
+    text-align: center;
 }
 
 .contact h2 {
