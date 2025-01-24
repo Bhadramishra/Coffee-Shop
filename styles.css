@@ -172,3 +172,42 @@ footer {
     color: #fff;
     margin-top: 2rem;
 }
+
+/* Basic styling to center the alert */
+.custom-alert {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed positioning so it stays in place */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background with opacity */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    z-index: 1000; /* Ensure the alert is above other content */
+}
+
+/* Style for the alert box */
+.alert-content {
+    background-color: #fff; /* White background for the alert */
+    border-radius: 10px; /* Rounded corners */
+    padding: 2rem; /* Padding inside the alert */
+    text-align: center; /* Center the text */
+    max-width: 400px; /* Set a max width */
+    width: 80%; /* Make the alert responsive */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50; /* Green button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
