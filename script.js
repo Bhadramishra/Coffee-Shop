@@ -22,7 +22,7 @@ if (name && email && message) {
 
 } else {
     // Show custom error message
-    showAlert("Please fill in all fields before submitting.");
+    showAlert("One or more fields are blank.Please fill in all fields before submitting.");
 }
 
 // Function to show the custom alert
