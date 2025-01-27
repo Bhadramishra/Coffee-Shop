@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Basic validation
 if (name && email && message) {
     // Show custom success message
-    showAlert(`Thank you, ${name}! Your message has been received.`);
+    showAlert(`Thank you, ${name}! Your message has been received. We will get back in touch shortly!`);
 
     // Clear form fields
     contactForm.reset();
