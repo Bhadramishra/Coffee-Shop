@@ -1,2 +1,2 @@
 # Coffee-Shop
-Online coffee shop with customizable orders and smooth designs
+Online coffee shop with customizable orders and interactive designs
