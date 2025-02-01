@@ -17,3 +17,29 @@ header {
     align-items: center;
     border-radius: 0 0 50% 50%;
 }
+
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 15;
+}
+
+.nav-links a {
+    color: #f9f0f0;
+    text-decoration: none;
+    font-size: 15pt;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    font-size: 20pt;
+}
